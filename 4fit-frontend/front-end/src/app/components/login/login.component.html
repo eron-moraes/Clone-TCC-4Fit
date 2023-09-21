@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="image"></div>
+  <div class="card-form">
+    <div class="image-form">
+      <img src="../../../assets/four.png" alt="log" />
+    </div>
+    <form [formGroup]="form">
+      <div style="margin-bottom: 1rem">
+        <mat-form-field
+          style="width: 100%; margin: 0; padding: 0"
+          appearance="outline"
+        >
+          <mat-label>E-mail</mat-label>
+          <input
+            formControlName="email"
+            required
+            name="email"
+            matInput
+            placeholder="Ex. fulano@mail.com"
+          />
+          <mat-icon matSuffix>email</mat-icon>
+
+          <mat-hint *ngIf="validateInput('email')">Campo obrigatório</mat-hint>
+        </mat-form-field>
+      </div>
+      <div style="margin-bottom: 1rem">
+        <mat-form-field
+          style="width: 100%; margin: 0; padding: 0"
+          appearance="outline"
+        >
+          <mat-label>Senha</mat-label>
+          <input
+            formControlName="senha"
+            required
+            name="senha"
+            type="password"
+            matInput
+            placeholder="Ex. 123"
+          />
+          <mat-icon matSuffix>password</mat-icon>
+          <mat-hint *ngIf="validateInput('senha')">Campo obrigatório</mat-hint>
+        </mat-form-field>
+      </div>
+      <button
+        value="Log in"
+        class="full-width mat-elevation-z4 button-green"
+        mat-stroked-button
+        color="primary"
+        l
+      >
+        Acessar
+      </button>
+    </form>
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="log"></div>
+  <form class="form mat-elevation-z8">
+    <img
+      src="../../../assets/Ideia_páginas_four_fit__2_-removebg-preview.png"
+      alt="log"
+    />
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input
+        formControlName="email"
+        required
+        [(ngModel)]="creds.email"
+        name="email"
+        matInput
+        placeholder="Ex. fulano@mail.com"
+      />
+      <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input
+        formControlName="senha"
+        required
+        [(ngModel)]="creds.senha"
+        name="senha"
+        type="password"
+        matInput
+        placeholder="Ex. 123"
+      />
+      <mat-icon matSuffix>password</mat-icon>
+    </mat-form-field>
+
+    <button
+      (click)="logar()"
+      [disabled]="!validaCampos()"
+      class="full-width mat-elevation-z4"
+      mat-stroked-button
+      color="primary"
+      l
+    >
+      Login
+    </button>
+  </form>
+</div> -->

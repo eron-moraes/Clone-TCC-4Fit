@@ -1,2 +1,2 @@
-# Clone-TCC-4Fit
- Clone do nosso TCC feito na Kaspper Academy
+# 4Fit
+Repositório destinado ao nosso TCC

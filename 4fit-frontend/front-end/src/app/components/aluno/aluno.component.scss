@@ -1,0 +1,31 @@
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+button {
+  width: fit-content;
+}
+
+.edit {
+  color: rgb(0, 153, 255);
+}
+
+.delete {
+  color: red;
+}
+.button-green {
+  background-color: #eaff5a !important;
+  color: black !important;
+  font-weight: 600;
+}

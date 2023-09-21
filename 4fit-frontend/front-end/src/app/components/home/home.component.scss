@@ -1,0 +1,32 @@
+.card {
+  width: 70%;
+  margin: 1rem auto;
+  background-color: rgb(235, 235, 235);
+}
+
+img {
+  height: 20rem;
+}
+.background-image-card {
+  width: calc(100% / 3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-link {
+  font-size: 5rem;
+  color: white;
+}
+.home-style {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.home-style:has(a span:hover) a span:not(:hover) {
+  color: rgb(131, 131, 131);
+  transition: color 0.5s ease-in-out;
+}

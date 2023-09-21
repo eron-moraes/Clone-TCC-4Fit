@@ -1,0 +1,43 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer
+    #drawer
+    class="sidenav"
+    mode="side"
+    style="background-color: #131313"
+  >
+    <div class="image">
+      <img src="../../../assets/four.png" alt="Imagem de navegação" />
+    </div>
+    <mat-nav-list class="nav-list">
+      <a routerLinkActive="active" mat-list-item routerLink="inicio">
+        <i class="material-icons">home</i>
+        <span>Início</span>
+      </a>
+      <a routerLinkActive="active" mat-list-item routerLink="aluno">
+        <i class="material-icons">account_circle</i>
+        <span>Alunos</span>
+      </a>
+      <a routerLinkActive="active" mat-list-item routerLink="instrutor">
+        <i class="material-icons">person</i>
+        <span>Instrutores</span>
+      </a>
+      <a routerLinkActive="active" mat-list-item routerLink="matriculas">
+        <i class="material-icons">subtitles</i>
+        <span>Matrículas</span>
+      </a>
+      <a routerLinkActive="active" mat-list-item routerLink="financeiro">
+        <i class="material-icons">monetization_on</i>
+        <span>Financeiro</span>
+      </a>
+      <a mat-list-item routerLink="login">
+        <i class="material-icons">logout</i>
+        <span>Sair</span>
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <app-header (menu)="drawer.toggle()"></app-header>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

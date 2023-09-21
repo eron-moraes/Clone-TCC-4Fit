@@ -1,0 +1,53 @@
+.card-form {
+  margin-right: 3rem;
+}
+form {
+  display: flex;
+  padding: 2rem;
+  width: 35vw;
+  background-color: white;
+  border-radius: 12px;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(30, 30, 30);
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  width: 50vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(30, 30, 30, 1)
+    ),
+    url("https://images.pexels.com/photos/3289711/pexels-photo-3289711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+img {
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+.image-form {
+  display: flex;
+  justify-content: center;
+}
+mat-hint {
+  color: red;
+}
+:host::ng-deep.mat-mdc-form-field-hint-wrapper {
+  padding: 0;
+}
+.button-green {
+  background-color: #eaff5a !important;
+  color: black !important;
+  font-weight: 600;
+}

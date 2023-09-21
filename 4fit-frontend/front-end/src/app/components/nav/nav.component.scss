@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 18vw;
+  color: white;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 15vw;
+    height: auto;
+  }
+}
+
+.sidenav a {
+  color: white;
+}
+
+.sidenav i {
+  margin-right: 0.3rem;
+}
+
+.menu {
+  margin: 1rem 0 0 2rem;
+  color: white;
+  background: rgb(128, 128, 128);
+}
+a {
+  span {
+    margin-left: 0.4rem;
+  }
+}
+span,
+.material-icons {
+  color: white;
+}
+
+mat-nav-list {
+  padding-left: 1rem;
+}
+
+.active {
+  background-color: #eaff5a;
+  border-radius: 12px 0 0 12px;
+  span,
+  .material-icons {
+    color: black;
+  }
+}
